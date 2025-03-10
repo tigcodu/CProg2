@@ -47,7 +47,7 @@ int main() {
     int mid, mid_row, mid_col;
 
     while (left_row <= right_row && left_col <= right_col) {
-        mid = ((left_row * columns + left_col) + (right_row * columns + right_col)) / 2;
+        mid = (left_row * left_col) + ((left_row * columns + left_col) - (right_row * columns + right_col)) / 2;
         mid_row = mid / columns;
         mid_col = mid % columns;
         if (target == value[mid_row][mid_col]) {
@@ -89,7 +89,7 @@ alternate
     int mid, mid_row, mid_col;
 
     while (left <= right) {
-        mid = (left + right) / 2;
+        mid = left + (right - left) / 2;
         mid_row = mid / columns;
         mid_col = mid % columns;
         if (target == value[mid_row][mid_col]) {
