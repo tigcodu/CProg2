@@ -23,7 +23,7 @@ int main(int argc, const char* arg[]) {
 
 
 /*
-    #include<stdio.h>
+#include<stdio.h>
 
 int main(){
         int arr[100];
