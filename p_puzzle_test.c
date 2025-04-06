@@ -27,20 +27,20 @@ int main(int argc, const char* arg[]) {
 
 int main(){
     int arr[100];
-	   int *p = arr;
+	int *p = arr;
 
-   	scanf("%d",p);
+	scanf("%d",p);
 
-   	while(*p!=0){
+	while(*p!=0){
         p++;
-	      	printf("Enter value\n");
-		      scanf("%d",p);
-   	}
-	   --p;
-	   while(p >= arr){
-	      	printf("%d\t",*p);
-	      	--p;
+		printf("Enter value\n");
+		scanf("%d",p);
 	}
- return 0;
+	--p;
+	while(p >= arr){
+		printf("%d\t",*p);
+		--p;
+	}
+
 }
 */
