@@ -26,7 +26,7 @@ int main(int argc, const char* arg[]) {
 #include<stdio.h>
 
 int main(){
-        int arr[100];
+        int arr[80];
 	int *p = arr;
 
 	scanf("%d",p);
