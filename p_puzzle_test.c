@@ -32,7 +32,7 @@ int main(){
 	scanf("%d",p);
 
 	while(*p!=0){
-            p++;
+                p++;
 		printf("Enter value\n");
 		scanf("%d",p);
 	}
