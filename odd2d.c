@@ -3,7 +3,7 @@
 void oddArray(int arr[3][3]) {
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
-            if (arr[i][j] % 2 == 0) {
+            if (arr[i][j] % 2 == 1) {
                 printf("Array: arr[%d][%d] = %d\n", i, j, arr[i][j]);
             }
         }
@@ -13,7 +13,7 @@ void oddArray(int arr[3][3]) {
 void oddPointer(int *p) {
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
-            if (*p % 2 == 0) {
+            if (*p % 2 == 1) {
                 printf("Pointer: i = %d, j = %d, *p = %d\n", i, j, *p);
             }
             p++;
@@ -24,7 +24,7 @@ void oddPointer(int *p) {
 void oddArrayAct(int (*arr)[3]){
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
-            if (*(*(arr + i) + j) % 2 == 0){
+            if (*(*(arr + i) + j) % 2 == 1){
                 printf("Array acting as pointer: *(*(arr + %d) + %d) = %d\n", i, j, *(*(arr + i) + j));
             }
         }
