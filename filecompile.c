@@ -12,12 +12,12 @@ int main() {
    fclose(fp);
    
    fp = fopen("E:\\TextFiles\\devcompiletest.txt", "a");
-   while(ans==1) { 
-   		printf("Enter name:\t");
-        scanf("%s",name);
-        fprintf(fp,"%s\n", name);
-        printf("Another name? ");
-        scanf("%d",&ans);
+   while(ans == 1) { 
+      printf("Enter name:\t");
+      scanf("%s",name);
+      fprintf(fp,"%s\n", name);
+      printf("Another name? ");
+      scanf("%d",&ans);
     }
     fclose(fp);
    
